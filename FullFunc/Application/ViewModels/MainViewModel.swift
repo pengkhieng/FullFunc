@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class MainViewModel : ObservableObject {
+    
+    @Published var listScreen: [String] = ["Home", "Login", "SignUp"];
+}
