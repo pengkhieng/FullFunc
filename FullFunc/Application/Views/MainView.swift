@@ -19,7 +19,8 @@ struct MainView: View {
     private let screenView: [ListScreen] = [
         ListScreen(view: AnyView(ContentView()), title: "Content"),
         ListScreen(view: AnyView(HomeView()), title: "Home"),
-        ListScreen(view: AnyView(LoginView()), title: "Login")
+        ListScreen(view: AnyView(LoginView()), title: "Login"),
+        ListScreen(view: AnyView(AppIconView()), title: "Setting")
     ]
     
     
@@ -44,6 +45,6 @@ struct MainView: View {
     }
 }
 
-//#Preview {
-//    MainView()
-//}
+#Preview {
+    MainView()
+}
